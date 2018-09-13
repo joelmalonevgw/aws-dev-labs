@@ -1,0 +1,17 @@
+{
+  "name": "aws-ts-playground",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "express": "^4.16.3"
+  },
+  "scripts": {
+    "start": "ts-node ."
+  }
+}
