@@ -1,7 +1,8 @@
 import { lab2 } from "./labs/lab-2";
+import { lab3 } from "./labs/lab-3";
 
 const allLabs: Array<() => Promise<any>> = [
-    lab2
+    lab3, lab2
 ]
 
 async function runLabs(labs: Array<() => Promise<any>>): Promise<void> {

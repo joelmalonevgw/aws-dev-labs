@@ -4,9 +4,10 @@ import AWS from 'aws-sdk'
 
 export async function lab2(): Promise<void> {
 
-    const s3 = new AWS.S3()
+    // TODO: all of this
+    // const s3 = new AWS.S3()
 
-    const outputBucket = await s3.createBucket({ Bucket: 'joel-lab-2-output-bucket' })
-        .promise()
+    // const outputBucket = await s3.createBucket({ Bucket: 'joel-lab-2-output-bucket' })
+    //     .promise()
 
 }
