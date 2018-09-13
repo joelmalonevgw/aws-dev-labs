@@ -1,0 +1,21 @@
+import { lab2 } from "./labs/lab-2";
+
+const allLabs: Array<() => Promise<any>> = [
+    lab2
+]
+
+async function runLabs(labs: Array<() => Promise<any>>): Promise<void> {
+    if (labs.length === 0) {
+        return
+    }
+
+    const next = labs[0]
+    await next()
+
+    return await runLabs(labs.slice(1))
+}
+
+runLabs(allLabs)
+    .catch(err => {
+        console.log('Unhandled error in execution.', err)
+    })
